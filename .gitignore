@@ -1,0 +1,24 @@
+cat << 'EOF' > .gitignore
+# Build artifacts
+build/
+bin/
+*.o
+*.obj
+*.so
+*.dylib
+*.a
+*.out
+
+# CMake artifacts
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Tooling & IDE
+.vscode/
+.idea/
+*.swp
+*.DS_Store
+EOF
