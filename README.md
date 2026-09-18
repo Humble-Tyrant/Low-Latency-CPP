@@ -9,8 +9,9 @@ A structured repository tracking progressive development in modern C++ (C++20), 
 - **Flags:** `-Wall -Wextra -Wpedantic -Wconversion -Wshadow`
 
 ## Progression & Modules
-- **`week-01/` — Core Fundamentals, Invariants & Streams**
-  - `bubble_sort.cpp`: Naive sorting baseline on bid order structures with invariant analysis and early-exit optimization.
+- **`week-01/` — Core Fundamentals, Invariants & Sorting Baselines**
+  - `bubble_sort.cpp`: Naive sorting baseline with loop invariant analysis and early-exit branch optimization.
+  - `selection_sort.cpp`: Operational metrics instrumentation comparing algorithmic comparison count vs. memory write traffic (swaps).
   - `tick_invariant_check.cpp`: Market data tick stream validator enforcing price continuity and filtering null/corrupted packets.
 - **`week-02/`** *(Upcoming)*: Memory alignment, cache lines, RAII, and move semantics.
 
@@ -18,3 +19,4 @@ A structured repository tracking progressive development in modern C++ (C++20), 
 ```bash
 cmake -B build
 cmake --build build
+

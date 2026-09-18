@@ -13,4 +13,5 @@ endif()
 
 # Week 01 Targets
 add_executable(bubble_sort week-01/bubble_sort.cpp)
+add_executable(selection_sort week-01/selection_sort.cpp)
 add_executable(tick_invariant_check week-01/tick_invariant_check.cpp)
