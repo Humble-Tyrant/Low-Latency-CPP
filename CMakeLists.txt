@@ -38,3 +38,17 @@ add_executable(bug2_leak_refactor               ${LAB_DIR}/bug2_leak_refactor.cp
 add_executable(bug3_overflow_refactor           ${LAB_DIR}/bug3_overflow_refactor.cpp)
 add_executable(bug4_uninitialized_refactor      ${LAB_DIR}/bug4_uninitialized_refactor.cpp)
 add_executable(bug5_dangling_reference_refactor ${LAB_DIR}/bug5_dangling_reference_refactor.cpp)
+
+# ==============================================================================
+# Week 02: Utility Library Targets
+# ==============================================================================
+set(WK2_DIR "week_02")
+
+add_executable(utility_v0_tests ${WK2_DIR}/utility_library_v0/main.cpp)
+target_include_directories(utility_v0_tests PRIVATE ${WK2_DIR}/utility_library_v0)
+
+add_executable(utility_v1_tests ${WK2_DIR}/utility_library_v1/main.cpp)
+target_include_directories(utility_v1_tests PRIVATE ${WK2_DIR}/utility_library_v1)
+
+add_executable(utility_v2_tests ${WK2_DIR}/utility_library_v2/main.cpp)
+target_include_directories(utility_v2_tests PRIVATE ${WK2_DIR}/utility_library_v2)
