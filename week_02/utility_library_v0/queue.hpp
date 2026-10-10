@@ -63,7 +63,7 @@ class Queue{
     Queue& operator=(const Queue& other)=delete;
 
     Queue(Queue&& other) noexcept
-    :size_(other.size_),head_(other.head_),tail_(other.tail_)
+    :head_(other.head_), tail_(other.tail_), size_(other.size_)
     {
         other.head_=nullptr;
         other.tail_=nullptr;

@@ -133,8 +133,8 @@ int main(){
     try{
         std::cout<<qa.front()<<"\n";
     }
-    catch(const std::out_of_range& e){
-        std::cout<<"Caught exception (expected) : "<<e.what()<<"\n";
+    catch(const std::out_of_range& ex){{
+        std::cout<<"Caught exception (expected) : "<<ex.what()<<"\n";
     }
 
     // moved-from queue must still be usable
@@ -303,4 +303,5 @@ int main(){
     std::cout<<"lq front() (expected 5) : "<<lq.front()<<"\n";
 
     return 0;
+}
 }
